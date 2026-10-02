@@ -1,0 +1,44 @@
+#datosp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+#arquero, #defensor, #mediocampista, #delantero{
+    width: 12px;
+    height: 12px;
+} 
+#esta{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    background-color:azure;
+}
+body{
+    background-color: gray;
+}
+*{
+    font-family:'Times New Roman', Times, serif
+}
+legend{
+    font-size: 20px;
+    color: rgb(26, 26, 114);
+    background-color: rgb(180, 143, 143);
+}
+#plantel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    background-color: azure;
+}
+.ficha{
+    border: 1px solid black;
+}
+.capitan{
+    border: 3px solid rgb(250, 225, 3);
+}
+.destacado{
+    background-color: rgb(150, 58, 42);
+}

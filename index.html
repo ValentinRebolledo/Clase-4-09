@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>futbolista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/enviar" method="post">
+        <fieldset id="datosp">
+            <legend>datos personales</legend>
+            <label for="nombre">nombre:</label>
+            <input type="text" name="nombre" id="nombre" required >
+            <label for="posicion">posicion</label>
+            <input type="radio" name="posicion" id="arquero"> arquero
+            <input type="radio" name="posicion" id="defensor"> defensor
+            <input type="radio" name="posicion" id="mediocampista"> mediocampista
+            <input type="radio" name="posicion" id="delantero"> delantero
+            <label for="pais">pais:</label>
+            <select name="pais" id="pais">
+                <option value="ar">argentina</option>
+                <option value="br">brasil</option>
+                <option value="co">colombia</option>
+                <option value="ch">chile</option>
+                <option value="ur">uruguay</option>
+            </select>
+            <label for="numero">numero:</label>
+            <input type="number" name="numero" id="numero" min="1" max="99" required>
+            <label for="remera">color de la remera:</label>
+            <input type="color" name="remera" id="remera">
+            <label for="nacimiento">fecha de nacimiento:</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+            <label for="carrera">reseña de jugador:</label>
+            <textarea name="carrera" id="carrera"></textarea>
+        </fieldset>
+        <fieldset id="esta">
+            <legend>estadisticas</legend>
+            <div>fortalezas:</div>
+            <label for="velocidad">velocidad:</label>
+            <input type="checkbox" name="velocidad" id="velocidad">
+            <label for="definicion">definicion:</label>
+            <input type="checkbox" name="definicion" id="definicion">
+            <label for="pase">pase:</label>
+            <input type="checkbox" name="pase" id="pase">
+            <label for="gambeta">gambeta:</label>
+            <input type="checkbox" name="gambeta" id="gambeta">
+            <label for="cabezazo">cabezazo</label>
+            <input type="checkbox" name="cabezazo" id="cabezazo">
+            <label for="marca">marca:</label>
+            <input type="checkbox" name="marca" id="marca">
+            <label for="velocidadr">atributo velocidad</label>
+            <input type="range" name="velocidadr" id="velocidadr" min="1" max="10">
+        </fieldset>
+        <label for="submit">enviar formulario:</label>
+        <input type="submit" value="enviar" id="submit">
+        <fieldset id="plantel">
+
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
